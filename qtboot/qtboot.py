@@ -43,9 +43,8 @@ class QTBoot(QMainWindow):
                 action.triggered.connect(event_cb)
                 self.toolbar.addAction(action)
 
-        self.show()
-
     def run(self):
+        self.show()
         self.app.exec_()
 
     def closeEvent(self, event):
